@@ -1,0 +1,23 @@
+{
+  "name": "base-discord-bot-cjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcorc/base-discord-bot-cjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcorc/base-discord-bot-cjs/issues"
+  },
+  "homepage": "https://github.com/rcorc/base-discord-bot-cjs#readme",
+  "dependencies": {
+    "discord.js": "^14.0.3",
+    "dotenv": "^16.0.1"
+  }
+}
