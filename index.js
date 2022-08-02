@@ -1,5 +1,5 @@
-require('dotenv').config()
 const Discord = require('discord.js')
+require('dotenv').config()
 
 const client = new Discord.Client({
     intents: [
@@ -18,9 +18,11 @@ let bot = {
 
 client.commands = new Discord.Collection()
 client.events = new Discord.Collection()
+client.slashcommands = new Discord.Collection()
 
 client.loadEvents = (bot, reload) => require('./handlers/events')(bot, reload)
 client.loadCommands = (bot, reload) => require('./handlers/commands')(bot, reload)
+client.loadSlashCommands = (bot, reload) => require('./handlers/slashcommands')(bot, reload)
 
 // call our functions
 client.loadEvents(bot, false)
